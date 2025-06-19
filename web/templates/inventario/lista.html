@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock del Almacén</title>
+</head>
+<body>
+    <h1>Lista de Productos</h1>
+    <a href="{% url 'agregar' %}">Agregar producto</a>
+    <ul>
+        {% for producto in productos %}
+            <li>{{ producto.nombre }} — {{ producto.tallas }}</li>
+        {% empty %}
+            <li>No hay productos en el almacén.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agregar Producto</title>
+</head>
+<body>
+    <h1>Agregar Producto al Almacén</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label>Nombre:</label><br>
+        <input type="text" name="nombre"><br>
+        <p>Tallas</p>
+        <label>35:</label><br>
+        <input type="number" name="35"><br><br>
+        <label>36:</label><br>
+        <input type="number" name="36"><br><br>
+        <label>37:</label><br>
+        <input type="number" name="37"><br><br>
+        <label>38:</label><br>
+        <input type="number" name="38"><br><br>
+        <label>39:</label><br>
+        <input type="number" name="39"><br><br>
+        <label>40:</label><br>
+        <input type="number" name="40"><br><br>
+        <label>41:</label><br>
+        <input type="number" name="41"><br><br>
+        <label>42:</label><br>
+        <input type="number" name="42"><br><br>
+        <label>43:</label><br>
+        <input type="number" name="43"><br><br>
+        <label>44:</label><br>
+        <input type="number" name="44"><br><br>
+        <label>45:</label><br>
+        <input type="number" name="45"><br><br>
+        <label>46:</label><br>
+        <input type="number" name="46"><br><br>
+
+        <button type="submit">Guardar</button>
+    </form>
+    <a href="{% url 'lista' %}">Volver a la lista</a>
+</body>
+</html>
